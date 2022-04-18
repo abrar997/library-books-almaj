@@ -1,0 +1,270 @@
+/* #fed700 */
+body {
+  font-family: "Cormorant Garamond", serif;
+  direction: rtl;
+}
+/* navbar */
+.navbar {
+  font-weight: 600;
+  box-shadow: 1px 1px 17px #eee;
+}
+
+/* link */
+a {
+  color: black !important;
+}
+a:hover {
+  color: black;
+}
+.navbar-brand {
+  color: #b39800 !important;
+}
+
+/* form navbar */
+.navbar form {
+  margin-right: 100px !important;
+}
+.navbar form input[type="text"] {
+  border-radius: 30px;
+  border: 1px solid rgb(165, 161, 161);
+  width: 400px;
+  margin: auto;
+  position: relative;
+  padding: 5px;
+}
+.navbar form button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 850px;
+}
+
+.navbar form button i {
+  color: #b39800;
+}
+
+.btn-dropdown-form {
+  background-color: transparent;
+  color: black !important;
+  font-weight: 600;
+}
+.btn-dropdown-form {
+  color: rgb(65, 58, 160);
+}
+
+.navbar .icons ul {
+  list-style: none;
+}
+
+.navbar .icons ul li {
+  margin-right: 15px;
+}
+.navbar .icons ul li i {
+  color: black;
+}
+.navbar .icons ul li .badge {
+  font-size: 12px;
+  background-color: #b39800 !important;
+  color: white;
+}
+.navbar .icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* hover menu */
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 4;
+  left: -20px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+  font-weight: 600;
+  color: black;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* header */
+.header-nav {
+  background-color: #b39800;
+  text-align: center !important;
+}
+.header-nav ul li {
+  text-align: center !important;
+}
+.header-nav .nav-link {
+  color: white !important;
+  font-size: 20px;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+/* cards */
+/* .cards-books::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	background: linear-gradient(#b39800, black);
+	clip-path: circle(20% at 10% 10%);
+} */
+
+.cards-books .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  margin: 40px 0;
+}
+
+.cards-books .container .card {
+  position: relative;
+  /* width: 200px;*/
+  height: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 2px 13px 13px #eee;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.cards-books .container .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.cards-books .container .card:hover .content {
+  transform: translateY(-10px);
+}
+
+.cards-books .container .card .content .imgBx {
+  position: relative;
+  width: 230px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.cards-books .container .card .content .imgBx img {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cards-books .container .card .content .contentBx {
+  padding-bottom: 30px;
+}
+.cards-books .container .card .content .contentBx h3 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.cards-books .container .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+.cards-books .container .card:hover .sci{
+  background-color: white;
+  height: 100px;
+  /* bottom: 10px; */
+  width: 100%;
+  border-bottom: 2px solid #b39800;
+  text-align: center;
+}
+.cards-books .container .card .sci {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+
+.cards-books .container .card .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(30px);
+  transition: 0.5s;
+  opacity: 0;
+  
+}
+
+.cards-books .container .card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.cards-books .container .card .sci li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* pagination */
+.pagination {
+  margin-right: 260px;
+}
+
+/* .pagination .page-item .page-link {
+  background-color: #b39800 !important;
+  color: white !important;
+} */
+/* categ */
+.categ {
+  width: 250px;
+  margin-right: auto;
+  border-radius: 20%;
+  padding: 10px;
+  text-align: center;
+}
+.categ ul {
+  list-style: none;
+}
+.categ h5 {
+  color: #b39800;
+}
+.categ label {
+  font-weight: 600;
+}
